@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.Update_Profile_Image">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="15dp"
+        android:src="@drawable/choose_image" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/btn_back_color"
+        android:text="Upload Now"
+        android:textAllCaps="false"
+        android:id="@+id/upload"
+        android:textSize="18sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

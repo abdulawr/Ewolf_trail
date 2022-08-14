@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ss_technology.mushinprojectandroidapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MushinProjectAndroidApp"
+        android:usesCleartextTraffic="true"
+        tools:node="merge">
+        <activity
+            android:name=".Activities.Forgot_Password"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.Vaccination"
+            android:exported="true"
+            android:label="Vaccination" />
+        <activity
+            android:name=".Activities.Main_Home"
+            android:label="E-Woof Trials" />
+        <activity
+            android:name=".Activities.Chat_Width"
+            android:theme="@style/NoStatus" />
+
+        <service
+            android:name=".Services.SendingAppoimentMessage"
+            android:exported="true"
+            android:process=":ServiceProcess" />
+        <service
+            android:name=".Services.Read_SMS"
+            android:exported="true"
+            android:process=":ServiceProcess" />
+
+        <receiver android:name=".Services.AlarmReceiver" />
+
+        <activity
+            android:name=".Activities.Your_Pets_List"
+            android:label="Your Pet List" />
+        <activity
+            android:name=".Activities.Add_Your_Pet"
+            android:label="Add Your Pet" />
+        <activity
+            android:name=".Activities.Chats"
+            android:label="Chat" />
+        <activity android:name=".Activities.View_Post_Details" />
+        <activity
+            android:name=".Activities.Buy_Pets"
+            android:label="Buy Pets" />
+        <activity
+            android:name=".Activities.Your_Sell_Pets_Post"
+            android:label="Your Sell Pets Post" />
+        <activity
+            android:name=".Activities.Sell_Pets"
+            android:label="Sell Your Pets" />
+        <activity
+            android:name=".Activities.Diet_chart"
+            android:label="Diet Chart" />
+        <activity
+            android:name=".Activities.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.MushinProjectAndroidApp.NoActionBar" />
+        <activity
+            android:name=".Activities.Contact_Us"
+            android:label="Contact Us" />
+        <activity
+            android:name=".Activities.Profile"
+            android:label="Profile" />
+        <activity
+            android:name=".Activities.Update_Profile_Image"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Activities.Website"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Phone_Auth_Activity.PhoneAuth"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Activities.Upload_User_Account_Detailts"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Activities.SignUp"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:theme="@style/No_Status_Bar" />
+        <activity
+            android:name=".Activities.SplashScreen"
+            android:theme="@style/Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

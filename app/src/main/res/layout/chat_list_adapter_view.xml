@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"
+        android:id="@+id/image"
+        app:civ_border_color="#707070"
+        android:layout_marginLeft="16sp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginTop="8dp"
+        app:civ_border_width="0.6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:id="@+id/name"
+            android:textStyle="bold"
+            android:text="Abdul TAG"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:id="@+id/mobile"
+            android:text="03059235079"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:visibility="gone"
+            android:id="@+id/notif"
+            android:textColor="#4CAF50"
+            android:text="You have new messages"/>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="#707070"/>
+
+</LinearLayout>
