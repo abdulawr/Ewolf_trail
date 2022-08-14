@@ -13,5 +13,4 @@ The main idea of the project is to develop app that can help dog trainer and pet
   <img src="preview/9.jpg" width="300" />
   <img src="preview/10.jpg" width="300" />
   <img src="preview/11.jpg" width="300" />
-  <img src="preview/12.jpg" width="300" />
 </p>
